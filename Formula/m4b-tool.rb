@@ -22,7 +22,7 @@ class M4bTool < Formula
   def install
     if head?
       system "./build"
-      mv "dist/m4b-tool.phar" "m4b-tool.phar"
+      mv "dist/m4b-tool.phar", "m4b-tool.phar"
     end
     
     bin.install "m4b-tool.phar" => "m4b-tool"
